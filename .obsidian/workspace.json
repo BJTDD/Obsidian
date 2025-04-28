@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "기획.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -214,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -231,7 +231,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6094158b70f4e10",
+  "active": "3c7eff37c2d94ea4",
   "lastOpenFiles": [
     "2025-04-28.md",
     "기획.md",
