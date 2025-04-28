@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "기획.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -214,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
