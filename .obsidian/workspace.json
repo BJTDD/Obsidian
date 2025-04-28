@@ -138,15 +138,19 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "2ec5e7425bc399bc",
   "lastOpenFiles": [
-    "2025-04-28.md",
-    "기획.md",
-    "무제.md",
+    "Excalidraw/Drawing 2025-04-28 18.10.45.excalidraw.md",
     "2025-04-25.md",
+    "Excalidraw/Drawing 2025-04-28 18.11.02.excalidraw.md",
+    "기획.md",
+    "Excalidraw",
+    "2025-04-28.md",
+    "무제.md",
     "2025-04-24.md",
     "2025-04-23.md",
     "무제.canvas",
