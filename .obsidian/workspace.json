@@ -125,26 +125,10 @@
   "right": {
     "id": "509eb19905a50656",
     "type": "split",
-    "children": [
-      {
-        "id": "a754e1422b4e5667",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "08bb904412bff3ed",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          }
-        ]
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
-    "width": 322.5
+    "width": 322.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
