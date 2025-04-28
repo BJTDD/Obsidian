@@ -98,7 +98,77 @@
   "right": {
     "id": "509eb19905a50656",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "06e6c428187ebc2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f958f045f421a6ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "기획.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "기획 의 백링크"
+            }
+          },
+          {
+            "id": "acaddb3ac7c8ff13",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "기획.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "기획 의 나가는 링크"
+            }
+          },
+          {
+            "id": "ab44e553c7c2be9e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "b6a8eabff7e44a75",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "기획.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "기획 의 개요"
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
     "width": 322.5,
     "collapsed": true
