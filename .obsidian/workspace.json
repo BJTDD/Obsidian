@@ -125,7 +125,77 @@
   "right": {
     "id": "509eb19905a50656",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "dd2c98e4f74afadc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3f20bfd9dd0726f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "기획.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "기획 의 백링크"
+            }
+          },
+          {
+            "id": "f9240d9d02355819",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "기획.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "기획 의 나가는 링크"
+            }
+          },
+          {
+            "id": "5c032aad5d9042bb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "66766a07d031ec75",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "기획.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "기획 의 개요"
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
     "width": 322.5,
     "collapsed": true
@@ -137,9 +207,7 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "command-palette:명령어 팔레트 열기": false
     }
   },
   "active": "2ec5e7425bc399bc",
