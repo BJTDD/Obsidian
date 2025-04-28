@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "7a479ecf2561e33b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-04-28 18.11.14.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-04-28 18.11.14.excalidraw"
+            }
+          },
+          {
             "id": "8c97d4203b7eecfc",
             "type": "leaf",
             "state": {
@@ -63,7 +75,8 @@
               "title": "무제"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,12 +155,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "2ec5e7425bc399bc",
+  "active": "7a479ecf2561e33b",
   "lastOpenFiles": [
+    "기획.md",
+    "Excalidraw/Drawing 2025-04-28 18.11.14.excalidraw.md",
     "Excalidraw/Drawing 2025-04-28 18.10.45.excalidraw.md",
     "2025-04-25.md",
     "Excalidraw/Drawing 2025-04-28 18.11.02.excalidraw.md",
-    "기획.md",
     "Excalidraw",
     "2025-04-28.md",
     "무제.md",
