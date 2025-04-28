@@ -155,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-04-23.md",
+                "file": "기획.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-04-23 의 나가는 링크"
+              "title": "기획 의 나가는 링크"
             }
           },
           {
@@ -185,7 +185,7 @@
               "type": "outline",
               "state": {
                 "file": "기획.md",
-                "followCursor": false,
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -208,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
