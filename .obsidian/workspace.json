@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APlayerCharacterControll.md",
+                "file": "2025-04-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "APlayerCharacterControll 의 백링크"
+              "title": "2025-04-29 의 백링크"
             }
           },
           {
@@ -182,12 +182,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APlayerCharacterControll.md",
+                "file": "2025-04-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "APlayerCharacterControll 의 나가는 링크"
+              "title": "2025-04-29 의 나가는 링크"
             }
           },
           {
@@ -224,12 +224,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "248829007bd86755",
+  "active": "8c97d4203b7eecfc",
   "lastOpenFiles": [
+    "기획.md",
+    "APlayerCharacterControll.md",
     "2025-04-29.md",
     "2025-04-28.md",
-    "APlayerCharacterControll.md",
-    "기획.md",
     "conflict-files-obsidian-git.md",
     "2025-04-25.md",
     "Excalidraw/Drawing 2025-04-28 18.11.02.excalidraw.md",
