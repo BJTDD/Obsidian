@@ -180,13 +180,23 @@
               "icon": "lucide-list",
               "title": "2025-04-29 의 개요"
             }
+          },
+          {
+            "id": "3c287849869d0a01",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 322.5,
-    "collapsed": true
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
