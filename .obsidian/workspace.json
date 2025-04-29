@@ -117,54 +117,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f958f045f421a6ba",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "2025-04-29.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "2025-04-29 의 백링크"
-            }
-          },
-          {
-            "id": "acaddb3ac7c8ff13",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "2025-04-29.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "2025-04-29 의 나가는 링크"
-            }
-          },
-          {
-            "id": "ab44e553c7c2be9e",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "태그"
-            }
-          },
-          {
             "id": "b6a8eabff7e44a75",
             "type": "leaf",
             "state": {
@@ -189,8 +141,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -208,7 +159,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8c97d4203b7eecfc",
+  "active": "b6a8eabff7e44a75",
   "lastOpenFiles": [
     "2025-04-28.md",
     "기획.md",
