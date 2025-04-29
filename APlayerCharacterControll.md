@@ -22,6 +22,7 @@ APlayerCharacterControll::APlayerCharacterControll()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+
 	ConstructorHelpers::FObjectFinder<USkeletalMesh>PlayerMesh(TEXT("/Script/Engine.SkeletalMesh'/Game/Asset/Player/Survival_Character/Meshes/SK_Survival_Character.SK_Survival_Character'"));
 	if (PlayerMesh.Succeeded())
 	{
@@ -45,7 +46,6 @@ APlayerCharacterControll::APlayerCharacterControll()
 	{
 		GetMesh()->SetAnimInstanceClass(AnimInstance.Class);
 	}
-	InitializationFindWidget();
 	InitializationFindWeaponMesh();
 	InitializationIsWeaponMap();
 	InitializationFindInput();
@@ -55,6 +55,10 @@ APlayerCharacterControll::APlayerCharacterControll()
 void APlayerCharacterControll::BeginPlay()
 {
 	Super::BeginPlay();
+
+	InitializationFindWidget();
+
+
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
 	{
 		if (UEnhancedInputLocalPlayerSubsystem* SubSystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
@@ -504,27 +508,6 @@ void APlayerCharacterControll::WeaponFireSound()
 	{
 		UGameplayStatics::PlaySound2D(this, RifleSound);
 
-		//FTimerHandle HitSoundDelayHandle; //타이머를 제어하기 위한 핸들 변수(타이머취소, 타이머상태확인)
-		//GetWorld()->GetTimerManager().SetTimer(HitSoundDelayHandle,
-		//	FTimerDelegate::CreateLambda([this]() {
-		//		UGameplayStatics::PlaySound2D(this, HitSound);
-		//	}),
-		//	1.0f,
-		//	false
-		//	);
-		//람다함수 : 간단한 함수를 선언 없이 즉석에서 만드는 방식
-		//[캡쳐](매개변수){실행코드};
-		//GetWorld() : 현재 객체가 속한 월드를 가져온다.
-		//GetTimerManager() : 타이머를 관리하는 시스템
-		//SetTimer() : 타이머를 설정하고, 일정 시간이 지나면 특정 작업 실행
-		//FTimerDelegate::CreateLambda()는 람다함수를 타이머에 연결 가능한 델리게이트로 변환
-		//[this]는 현재 클래스의 멤버변수 함수에 접근하기 위한 캡쳐
-
-		/*GetWorld()->GetTimerManager().SetTimer(HitSoundDelayHandle,this,
-			&APlayerCharacterControll::Fire,
-			1.0f,
-			false
-		);*/
 
 	}
 }
@@ -615,12 +598,18 @@ void APlayerCharacterControll::InitializationIsWeaponMap()
 
 void APlayerCharacterControll::InitializationFindWidget()
 {
-	static ConstructorHelpers::FClassFinder<UUserWidget>HUD(TEXT("WidgetBlueprint'/Game/UMG/WB_HUD.WB_HUD_C'"));
+
+	if (HUDClass == nullptr)
+	{
+		HUDClass = LoadClass<UUserWidget>(nullptr, TEXT("/Game/UMG/WB_PlayerHUD.WB_PlayerHUD_C"));
+	}
+
+	/*static ConstructorHelpers::FClassFinder<UUserWidget>HUD(TEXT("WidgetBlueprint'/Game/UMG/WB_PlayerHUD.WB_PlayerHUD_C'"));
 
 	if (HUD.Succeeded())
 	{
 		HUDClass = HUD.Class;
-	}
+	}*/
 
 }
 

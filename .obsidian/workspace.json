@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "509eb19905a50656",
@@ -137,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-04-29.md",
+                "file": "APlayerCharacterControll.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-04-29 의 개요"
+              "title": "APlayerCharacterControll 의 개요"
             }
           },
           {
@@ -175,10 +176,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3c287849869d0a01",
+  "active": "248829007bd86755",
   "lastOpenFiles": [
-    "2025-04-28.md",
     "2025-04-29.md",
+    "2025-04-28.md",
     "기획.md",
     "APlayerCharacterControll.md",
     "conflict-files-obsidian-git.md",
