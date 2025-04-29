@@ -15,6 +15,7 @@
 #include "Engine/DamageEvents.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/Image.h"
+#include "Internationalization/Text.h"
 
 // Sets default values
 APlayerCharacterControll::APlayerCharacterControll()
@@ -47,7 +48,6 @@ APlayerCharacterControll::APlayerCharacterControll()
 		GetMesh()->SetAnimInstanceClass(AnimInstance.Class);
 	}
 	InitializationFindWeaponMesh();
-	InitializationIsWeaponMap();
 	InitializationFindInput();
 	
 }
@@ -57,7 +57,7 @@ void APlayerCharacterControll::BeginPlay()
 	Super::BeginPlay();
 
 	InitializationFindWidget();
-
+	InitializationIsWeaponMap();
 
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
 	{
@@ -182,6 +182,14 @@ void APlayerCharacterControll::OnAim()
 			CurrentBulletCount = SMGBulletCount;
 			//무기상태를 애니인스턴스한테 전달하기
 		}
+
+		//AsNumber()를 사용해서 int32를 FText로 변환
+		FText currentBullet = FText::AsNumber(CurrentBulletCount);
+		FText saveBullet = FText::AsNumber(SaveBulletCount);
+
+		FText text = FText::Format(FText::FromString(TEXT("{0}/{1}")), currentBullet, saveBullet);
+		
+		BulletCountTextBlock->SetText(text);
 	}
 
 
@@ -254,7 +262,12 @@ void APlayerCharacterControll::Fire()
 			false
 		);
 	}
-	
+	FText currentBullet = FText::AsNumber(CurrentBulletCount);
+	FText saveBullet = FText::AsNumber(SaveBulletCount);
+
+	FText text = FText::Format(FText::FromString(TEXT("{0}/{1}")), currentBullet, saveBullet);
+
+	BulletCountTextBlock->SetText(text);
 }
 
 void APlayerCharacterControll::Operate()
@@ -338,6 +351,14 @@ void APlayerCharacterControll::RifleMode()
 	{
 		if (WeaponChangeInMontage)
 		{
+			FVector2D currentImageSize = WeaponIconImage->Brush.ImageSize;
+		
+			if (WeaponIconImage && WeaponIconImageMap[EWeaponType::Rifle] && WeaponIconImageMap.Num() > 0 && WeaponIconImageMap.Contains(EWeaponType::Rifle))
+			{
+				WeaponIconImage->SetBrushFromTexture(WeaponIconImageMap[EWeaponType::Rifle]);
+				WeaponIconImage->SetBrushSize(currentImageSize);
+			}
+
 			UAnimInstance* AnimInstace = GetMesh()->GetAnimInstance();
 			float InMontageDuration = AnimInstace->Montage_Play(WeaponChangeInMontage);
 
@@ -388,6 +409,10 @@ void APlayerCharacterControll::RifleMode()
 	{
 		if (WeaponChangeOutMontage)
 		{
+			if (WeaponIconImage && WeaponIconImageMap[EWeaponType::Rifle] && WeaponIconImageMap.Num() > 0 && WeaponIconImageMap.Contains(EWeaponType::Rifle))
+			{
+				WeaponIconImage->SetBrushFromTexture(WeaponIconImageMap[EWeaponType::Rifle]);
+			}
 			UAnimInstance* AnimInstace = GetMesh()->GetAnimInstance();
 			AnimInstace->Montage_Play(WeaponChangeOutMontage);
 		}
@@ -420,6 +445,10 @@ void APlayerCharacterControll::PistolMode()
 	{
 		if (WeaponChangeInMontage)
 		{
+			if (WeaponIconImage && WeaponIconImageMap[EWeaponType::Pistol] && WeaponIconImageMap.Num() > 0 && WeaponIconImageMap.Contains(EWeaponType::Pistol))
+			{
+				WeaponIconImage->SetBrushFromTexture(WeaponIconImageMap[EWeaponType::Pistol]);
+			}
 			UAnimInstance* AnimInstace = GetMesh()->GetAnimInstance();
 			float InMontageDuration = AnimInstace->Montage_Play(WeaponChangeInMontage);
 
@@ -594,6 +623,12 @@ void APlayerCharacterControll::InitializationIsWeaponMap()
 	IsWeaponMap.Add(EWeaponType::Pistol, false);
 	IsWeaponMap.Add(EWeaponType::SMG, false);
 	IsWeaponMap.Add(EWeaponType::Rifle, false);
+	WeaponCrossHairImageMap.Add(EWeaponType::Pistol, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/crosshair.crosshair'")));
+	WeaponCrossHairImageMap.Add(EWeaponType::Rifle, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/crosshair.crosshair'")));
+	WeaponCrossHairImageMap.Add(EWeaponType::SMG, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/crosshair.crosshair'")));
+	WeaponIconImageMap.Add(EWeaponType::Pistol, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/PistolIcon.PistolIcon'")));
+	WeaponIconImageMap.Add(EWeaponType::Rifle, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/RifleIcon.RifleIcon'")));
+	WeaponIconImageMap.Add(EWeaponType::SMG, LoadObject<UTexture2D>(nullptr, TEXT("/Script/Engine.Texture2D'/Game/UMG/Texture/PistolIcon.PistolIcon'")));
 }
 
 void APlayerCharacterControll::InitializationFindWidget()

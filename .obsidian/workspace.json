@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -163,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-04-29.md",
+                "file": "APlayerCharacterControll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-04-29 의 백링크"
+              "title": "APlayerCharacterControll 의 백링크"
             }
           },
           {
@@ -182,12 +182,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-04-29.md",
+                "file": "APlayerCharacterControll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-04-29 의 나가는 링크"
+              "title": "APlayerCharacterControll 의 나가는 링크"
             }
           },
           {
@@ -224,10 +224,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8c97d4203b7eecfc",
+  "active": "248829007bd86755",
   "lastOpenFiles": [
-    "2025-04-28.md",
     "2025-04-29.md",
+    "2025-04-28.md",
     "APlayerCharacterControll.md",
     "기획.md",
     "conflict-files-obsidian-git.md",
