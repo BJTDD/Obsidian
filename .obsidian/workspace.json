@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APlayerCharacterControll.md",
+                "file": "2025-04-29.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "APlayerCharacterControll 의 개요"
+              "title": "2025-04-29 의 개요"
             }
           },
           {
@@ -176,12 +176,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "248829007bd86755",
+  "active": "8c97d4203b7eecfc",
   "lastOpenFiles": [
+    "APlayerCharacterControll.md",
     "2025-04-29.md",
     "2025-04-28.md",
     "기획.md",
-    "APlayerCharacterControll.md",
     "conflict-files-obsidian-git.md",
     "2025-04-25.md",
     "Excalidraw/Drawing 2025-04-28 18.11.02.excalidraw.md",
