@@ -1,4 +1,4 @@
-```cpp 
+```cpp
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
@@ -13,6 +13,8 @@
 #include "PlayerAnimInstance.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/DamageEvents.h"
+#include "Blueprint/UserWidget.h"
+#include "Components/Image.h"
 
 // Sets default values
 APlayerCharacterControll::APlayerCharacterControll()
@@ -43,77 +45,11 @@ APlayerCharacterControll::APlayerCharacterControll()
 	{
 		GetMesh()->SetAnimInstanceClass(AnimInstance.Class);
 	}
-
-	SM_RifleWeapon = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RifleWeaponMesh"));
-	SM_RifleWeapon->SetupAttachment(GetMesh());
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> rifleWeaponMesh(TEXT("/Script/Engine.StaticMesh'/Game/Asset/Weapons/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4.SM_AR4'"));
-	if (rifleWeaponMesh.Succeeded())
-	{
-		SM_RifleWeapon->SetStaticMesh(rifleWeaponMesh.Object);
-	}
-
-	SM_RifleWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("RifleWeapon_Socket"));
-
-
-	SM_PistolWeapon = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PistolWeaponMesh"));
-	SM_PistolWeapon->SetupAttachment(GetMesh());
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> pistolweaponMesh(TEXT("/Script/Engine.StaticMesh'/Game/Asset/PistolStaticMesh.PistolStaticMesh'"));
-	if (pistolweaponMesh.Succeeded())
-	{
-		SM_PistolWeapon->SetStaticMesh(pistolweaponMesh.Object);
-	}
-	SM_PistolWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("PistolWeapon_Socket"));
-
-	static ConstructorHelpers::FObjectFinder<UInputMappingContext> InputContext(TEXT("/Script/EnhancedInput.InputMappingContext'/Game/Input/IMC_PlayerInput.IMC_PlayerInput'"));
-	if (InputContext.Object != nullptr)
-	{
-		DefaultContext = InputContext.Object;
-	}
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputMove(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Move.IA_Move'"));
-	if (InputMove.Object != nullptr)
-	{
-		MoveAction = InputMove.Object;
-	}
-
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputLook(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Look.IA_Look'"));
-	if (InputLook.Object != nullptr)
-	{
-		LookAction = InputLook.Object;
-	}
-
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputAim(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Aim.IA_Aim'"));
-	if (InputAim.Object != nullptr)
-	{
-		AimAction = InputAim.Object;
-	}
-
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputFire(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Fire.IA_Fire'"));
-	if (InputFire.Object != nullptr)
-	{
-		FireAction = InputFire.Object;
-	}
-
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputOperate(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Operate.IA_Operate'"));
-	if (InputOperate.Object != nullptr)
-	{
-		OperateAction = InputOperate.Object;
-	}
-
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputRifleChange(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_RifleChange.IA_RifleChange'"));
-	if (InputRifleChange.Object != nullptr)
-	{
-		RifleChangeAction = InputRifleChange.Object;
-	}
+	InitializationFindWidget();
+	InitializationFindWeaponMesh();
+	InitializationIsWeaponMap();
+	InitializationFindInput();
 	
-	static ConstructorHelpers::FObjectFinder<UInputAction> InputPistolChange(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_PistolChange.IA_PistolChange'"));
-	if (InputPistolChange.Object != nullptr)
-	{
-		PistolChangeAction = InputPistolChange.Object;
-	}
-
-	IsWeaponMap.Add(EWeaponType::Pistol, false);
-	IsWeaponMap.Add(EWeaponType::SMG, false);
-	IsWeaponMap.Add(EWeaponType::Rifle, false);
 }
 
 void APlayerCharacterControll::BeginPlay()
@@ -129,16 +65,39 @@ void APlayerCharacterControll::BeginPlay()
 	//SM_Weapon->bHiddenInGame = true;
 	SM_RifleWeapon->SetVisibility(false);
 	SM_PistolWeapon->SetVisibility(false);
+	if (!HUDWidget && HUDClass)
+	{
+		HUDWidget = CreateWidget(GetWorld()->GetFirstPlayerController(), HUDClass);
+	}
+	if (HUDWidget)
+	{
+		HUDWidget->AddToViewport();
+
+		CrossHairImage = Cast<UImage>(HUDWidget->GetWidgetFromName(TEXT("CrosshairImage")));
+		WeaponIconImage = Cast<UImage>(HUDWidget->GetWidgetFromName(TEXT("WeaponIconImage")));
+		BulletCountTextBlock = Cast<UTextBlock>(HUDWidget->GetWidgetFromName(TEXT("BulletText")));
+		if (CrossHairImage)
+		{
+			CrossHairImage->SetVisibility(ESlateVisibility::Hidden);
+		}
+		if (WeaponIconImage)
+		{
+			WeaponIconImage->SetVisibility(ESlateVisibility::Hidden);
+		}
+		if (BulletCountTextBlock)
+		{
+			BulletCountTextBlock->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+
 }
 
-// Called every frame
 void APlayerCharacterControll::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
-// Called to bind functionality to input
 void APlayerCharacterControll::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -178,6 +137,20 @@ void APlayerCharacterControll::OnAim()
 {
 	if(IsWeaponMap.Num() > 0)
 	{
+		if (CrossHairImage)
+		{
+			CrossHairImage->SetVisibility(ESlateVisibility::Visible);
+		}
+		if (WeaponIconImage)
+		{
+			WeaponIconImage->SetVisibility(ESlateVisibility::Visible);
+		}
+		if (BulletCountTextBlock)
+		{
+			BulletCountTextBlock->SetVisibility(ESlateVisibility::Visible);
+		}
+
+		
 		if (IsWeaponMap.Contains(EWeaponType::Rifle) && currentWeapon == EWeaponType::Rifle)
 		{
 			OnAim_BP();
@@ -212,6 +185,18 @@ void APlayerCharacterControll::OnAim()
 
 void APlayerCharacterControll::OffAim()
 {
+	if (CrossHairImage)
+	{
+		CrossHairImage->SetVisibility(ESlateVisibility::Hidden);
+	}
+	if (WeaponIconImage)
+	{
+		WeaponIconImage->SetVisibility(ESlateVisibility::Hidden);
+	}
+	if (BulletCountTextBlock)
+	{
+		BulletCountTextBlock->SetVisibility(ESlateVisibility::Hidden);
+	}
 	OffAim_BP();
 	UPlayerAnimInstance* animInstace = Cast<UPlayerAnimInstance>(GetMesh()->GetAnimInstance());
 	animInstace->isAim = false;
@@ -292,7 +277,7 @@ void APlayerCharacterControll::Operate()
 		name = name.LeftChop(name.Len() - name.Find(TEXT("_C_1"))); //10 - 6 = 4
 		name = name.RightChop(3);
 		//GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, FString::Printf(TEXT("%s"), *name));
-		UGameplayStatics::PlaySound2D(this, WeaponChangeSound);
+
 
 		if (name == TEXT("WeaponPistol"))
 		{
@@ -542,6 +527,101 @@ void APlayerCharacterControll::WeaponFireSound()
 		);*/
 
 	}
+}
+
+void APlayerCharacterControll::InitializationFindInput()
+{
+
+	static ConstructorHelpers::FObjectFinder<UInputMappingContext> InputContext(TEXT("/Script/EnhancedInput.InputMappingContext'/Game/Input/IMC_PlayerInput.IMC_PlayerInput'"));
+	if (InputContext.Object != nullptr)
+	{
+		DefaultContext = InputContext.Object;
+	}
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputMove(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Move.IA_Move'"));
+	if (InputMove.Object != nullptr)
+	{
+		MoveAction = InputMove.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputLook(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Look.IA_Look'"));
+	if (InputLook.Object != nullptr)
+	{
+		LookAction = InputLook.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputAim(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Aim.IA_Aim'"));
+	if (InputAim.Object != nullptr)
+	{
+		AimAction = InputAim.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputFire(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Fire.IA_Fire'"));
+	if (InputFire.Object != nullptr)
+	{
+		FireAction = InputFire.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputOperate(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_Operate.IA_Operate'"));
+	if (InputOperate.Object != nullptr)
+	{
+		OperateAction = InputOperate.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputRifleChange(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_RifleChange.IA_RifleChange'"));
+	if (InputRifleChange.Object != nullptr)
+	{
+		RifleChangeAction = InputRifleChange.Object;
+	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> InputPistolChange(TEXT("/Script/EnhancedInput.InputAction'/Game/Input/IA_PistolChange.IA_PistolChange'"));
+	if (InputPistolChange.Object != nullptr)
+	{
+		PistolChangeAction = InputPistolChange.Object;
+	}
+
+}
+
+void APlayerCharacterControll::InitializationFindWeaponMesh()
+{
+
+	SM_RifleWeapon = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RifleWeaponMesh"));
+	SM_RifleWeapon->SetupAttachment(GetMesh());
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> rifleWeaponMesh(TEXT("/Script/Engine.StaticMesh'/Game/Asset/Weapons/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4.SM_AR4'"));
+	if (rifleWeaponMesh.Succeeded())
+	{
+		SM_RifleWeapon->SetStaticMesh(rifleWeaponMesh.Object);
+	}
+
+	SM_RifleWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("RifleWeapon_Socket"));
+
+
+	SM_PistolWeapon = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PistolWeaponMesh"));
+	SM_PistolWeapon->SetupAttachment(GetMesh());
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> pistolweaponMesh(TEXT("/Script/Engine.StaticMesh'/Game/Asset/PistolStaticMesh.PistolStaticMesh'"));
+	if (pistolweaponMesh.Succeeded())
+	{
+		SM_PistolWeapon->SetStaticMesh(pistolweaponMesh.Object);
+	}
+	SM_PistolWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("PistolWeapon_Socket"));
+
+}
+
+void APlayerCharacterControll::InitializationIsWeaponMap()
+{
+	IsWeaponMap.Add(EWeaponType::Pistol, false);
+	IsWeaponMap.Add(EWeaponType::SMG, false);
+	IsWeaponMap.Add(EWeaponType::Rifle, false);
+}
+
+void APlayerCharacterControll::InitializationFindWidget()
+{
+	static ConstructorHelpers::FClassFinder<UUserWidget>HUD(TEXT("WidgetBlueprint'/Game/UMG/WB_HUD.WB_HUD_C'"));
+
+	if (HUD.Succeeded())
+	{
+		HUDClass = HUD.Class;
+	}
+
 }
 
 
