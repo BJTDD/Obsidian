@@ -36,6 +36,16 @@
             }
           },
           {
+            "id": "59c88476536adf02",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
             "id": "ae24025fab0886d6",
             "type": "leaf",
             "state": {
@@ -224,7 +234,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ae24025fab0886d6",
+  "active": "59c88476536adf02",
   "lastOpenFiles": [
     "2025-04-29.md",
     "기획.md",
