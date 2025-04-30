@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -238,11 +238,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ae24025fab0886d6",
+  "active": "59c88476536adf02",
   "lastOpenFiles": [
+    "기획.md",
     "2025-04-30.md",
     "2025-04-29.md",
-    "기획.md",
     "APlayerCharacterControll.md",
     "2025-04-28.md",
     "conflict-files-obsidian-git.md",
