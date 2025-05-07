@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -224,11 +224,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ae24025fab0886d6",
+  "active": "cb70acd7c2d840e5",
   "lastOpenFiles": [
+    "기획.md",
     "2025-05-07.md",
     "2025-04-30.md",
-    "기획.md",
     "2025-04-29.md",
     "APlayerCharacterControll.md",
     "2025-04-28.md",
