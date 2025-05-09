@@ -75,8 +75,7 @@
               "title": "2025-05-09"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -235,10 +234,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "db33aa79de81f741",
+  "active": "ae24025fab0886d6",
   "lastOpenFiles": [
-    "기획.md",
     "스토리.md",
+    "기획.md",
     "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
     "무제.canvas",
     "무제",
