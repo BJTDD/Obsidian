@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "db33aa79de81f741",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "스토리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "스토리"
+            }
+          },
+          {
             "id": "57623638c3a6d895",
             "type": "leaf",
             "state": {
@@ -118,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "509eb19905a50656",
@@ -223,10 +236,13 @@
   },
   "active": "ae24025fab0886d6",
   "lastOpenFiles": [
+    "스토리.md",
+    "무제.canvas",
+    "무제",
     "2025-05-09.md",
-    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
-    "2025-05-08.md",
     "기획.md",
+    "2025-05-08.md",
+    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
     "2025-05-07.md",
     "Excalidraw/Drawing 2025-05-08 12.28.38.excalidraw.md",
     "2025-04-30.md",
@@ -241,7 +257,6 @@
     "Excalidraw",
     "2025-04-24.md",
     "2025-04-23.md",
-    "무제.canvas",
     "환영합니다!.md"
   ]
 }
