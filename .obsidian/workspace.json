@@ -63,7 +63,8 @@
               "title": "2025-05-12"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -223,13 +224,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ae24025fab0886d6",
+  "active": "d3fd19e55cc31d25",
   "lastOpenFiles": [
+    "기획.md",
     "2025-05-12.md",
     "2025-05-09.md",
     "2025-05-08.md",
     "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
-    "기획.md",
     "스토리.md",
     "Excalidraw/Drawing 2025-05-08 12.28.38.excalidraw.md",
     "APlayerCharacterControll.md",
