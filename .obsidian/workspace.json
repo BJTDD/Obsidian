@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -238,11 +238,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d3fd19e55cc31d25",
+  "active": "6bdcf7570a9d80e4",
   "lastOpenFiles": [
+    "2025-05-12 CPP AI Damage.md",
     "기획.md",
     "할것.md",
-    "2025-05-12 CPP AI Damage.md",
     "2025-05-09.md",
     "2025-05-08.md",
     "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
