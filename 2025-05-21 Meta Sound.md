@@ -80,4 +80,8 @@
 - Angular Motor은 Twist and Swing 체크하고  Orientation, Velocity의 Strength값 조절 여기선 300, 10
 
 ### Slerp
-- 
+- Angular Limits가 하나라도 락 걸려있으면 활성화가 안됨 Free로하면 사용가능
+- Target Velocity x값만 200 그냥움직임
+
+### Twist And Swing
+- 힘을 줘야 움직임
