@@ -42,5 +42,6 @@
 
 ## Physics
 
-
+### Physics Constraint
+- Physics Constraint 컴포넌트를 만들어 사용할 컴포넌트 두가지 이름을 넣어줌
 
