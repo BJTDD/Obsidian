@@ -23,6 +23,8 @@
 - BP에서 Spawn Sound Attached 하여 만든 MSS사용
 - 오버랩되면 내 액터를 지움. 그럼 Destroyed 이벤트가 실행되어 Execute Trigger Parameter 함수 실행 
 
-### Trigger
+### Trigger1
 - Trigger Repeat사용 Period는 BPM To Seconds를 연결해 사용
 - Trigger Sequence를 사용해 순차적으로 실행되게 사용
+
+## Trigger2
