@@ -24,4 +24,4 @@
 - 오버랩되면 내 액터를 지움. 그럼 Destroyed 이벤트가 실행되어 Execute Trigger Parameter 함수 실행 
 
 ### Trigger
-- 
+- Trigger Repeat사용 Period는 BPM To Seconds를 연결해 사용
