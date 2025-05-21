@@ -66,4 +66,7 @@
 
 ### Breakable
 - 특정 물리 값이 들어가면 끊어지게
-- Linear Limits - Advanced - Linear Breakable 체크
+- Linear Limits - Advanced - Linear Breakable 체크, Simulate Physics - Mass 조절
+
+### BP_SpringPad
+- 
