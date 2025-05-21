@@ -28,3 +28,7 @@
 - Trigger Sequence를 사용해 순차적으로 실행되게 사용
 
 ## Trigger2
+- 주로 사용되는 함수들 정리
+
+### BP_MSS_Wind
+- 바람사운드 만들기
