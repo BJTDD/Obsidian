@@ -52,5 +52,8 @@
 
 ### Physics Constraint - Linear Motor
 - 원래 위치로 돌아아게 
-- Position Target: 해당 위치로 이동하려는 힘을 줌
-- Velocity Target: 어떤 속도를 어떤 힘으로 줄지
+- Position Target: 해당 위치로 이동하려는 힘을 줌(탄성)
+- Velocity Target: 해당 위치로 해당 속도로 이동 되게
+
+### Physics Constraint - Angular Limit
+- Swing1: Z, Swing2: Y, Twist: X 축
