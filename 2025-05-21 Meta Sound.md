@@ -56,4 +56,7 @@
 - Velocity Target: 해당 위치로 해당 속도로 이동 되게
 
 ### Physics Constraint - Angular Limit
-- Swing1: Z, Swing2: Y, Twist: X 축
+- Swing1: Z, Swing2: Y, Twist: X 축   회전값 범위 지정
+
+### Physics Constraint - Angular Motor
+- Angular Drive Mode: Twist and Swing
