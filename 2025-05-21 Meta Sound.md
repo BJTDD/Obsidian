@@ -92,3 +92,6 @@
 - PhysicsConstraint 의 Root를 실린더로해서 Z축만 사용
 
 ### BP_Seasaw
+
+### BP_Thuster
+- PhysicsThruster 컴포넌트 이용
