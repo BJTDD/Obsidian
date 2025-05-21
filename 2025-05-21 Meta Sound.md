@@ -14,4 +14,5 @@
 ### Random
 - Wave Asset을 변수로만들어 배열로만들고 랜덤으로 재생되게 Random Get사용
 
-### 
+### BP_MSS_Bomb
+- 
