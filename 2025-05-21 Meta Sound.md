@@ -44,6 +44,9 @@
 
 ### Physics Constraint
 - Physics Constraint 컴포넌트를 만들어 사용할 컴포넌트 두가지 이름을 넣어줌. 두 컴포넌트를 연결할수있음
-- 첫번째 컴포넌트를 Root로 하고 ㅇ
-- Angular Limits가 Free 라서 회전이됨,  축을 Locked해서 해당 방향을 잠굴수있음
+- 첫번째 컴포넌트를 Root로 하고 움직인는 컴포넌트를 달아주면됨
+- Angular Limits가 Free 라서 회전이됨,  원하는 축을 Locked해서 해당 방향을 잠굴수있음
+
+### Physics Constraint - Linear Limits
+- 가동 범위 지정
 
