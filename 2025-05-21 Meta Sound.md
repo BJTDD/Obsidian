@@ -22,4 +22,6 @@
 - Inputs에 Input_Explosion 변수만들어 타입을 트리거로 만듬 이 트리거는 블루프린트든 다른곳에서 실행시키면 사용가능
 - BP에서 Spawn Sound Attached 하여 만든 MSS사용
 - 오버랩되면 내 액터를 지움. 그럼 Destroyed 이벤트가 실행되어 Execute Trigger Parameter 함수 실행 
+
+### Trigger
 - 
