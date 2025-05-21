@@ -60,3 +60,6 @@
 
 ### Physics Constraint - Angular Motor
 - Angular Drive Mode: Twist and Swing
+
+### Cable
+- 케이블 연결 Attach End To에 연결할 컴포넌트 이름 지정 
