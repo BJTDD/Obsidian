@@ -86,6 +86,9 @@
 ### Twist And Swing
 - 힘을 줘야 움직임
 
-### Revolving Door
+### BP_RevolvingDoor
 - 회전문 만들어서 선택후 Modeling Mode의 Mesh-Union으로 합쳐주기 이런식으로 합치면 기즈모가 중앙에 오게됨
-- 
+- 만들어진 Static Mesh를 BP에 배치하고 물리적용. 무게와 Angular Damping 값 조절
+- PhysicsConstraint 의 Root를 실린더로해서 Z축만 사용
+
+### BP_Seasaw
