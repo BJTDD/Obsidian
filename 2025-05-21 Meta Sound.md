@@ -73,5 +73,8 @@
 
 ### BP_TwoDoor
 - 서부영화 양쪽문 느낌
+- 실린더(기둥)가 루트 큐브(문)가 자식컴포넌트
 - PhysicsConstraint Disable Collision체크
-- 
+- Linear Limits는 모두 Locked 
+- Angular Limits는 Z축만 Limited(Swing1) 80
+- Angular Motor은 Twist and
