@@ -78,3 +78,6 @@
 - Linear Limits는 모두 Locked 
 - Angular Limits는 Z축만 Limited(Swing1) 80
 - Angular Motor은 Twist and Swing 체크하고  Orientation, Velocity의 Strength값 조절 여기선 300, 10
+
+### Slerp
+- 
