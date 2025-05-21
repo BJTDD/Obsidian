@@ -94,4 +94,5 @@
 ### BP_Seasaw
 
 ### BP_Thuster
-- PhysicsThruster 컴포넌트 이용
+- PhysicsThruster 컴포넌트 이용 스태틱매시의 자식노드로 사용
+- 기즈모 x축이 땅방향으로하면 그쪽으로 힘을줌, Thrust Strength 150만, Auto Activate 체크
