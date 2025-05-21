@@ -50,3 +50,7 @@
 ### Physics Constraint - Linear Limits
 - 가동 범위 지정
 
+### Physics Constraint - Linear Motor
+- 원래 위치로 돌아아게 
+- Position Target: 해당 위치로 이동하려는 힘을 줌
+- Velocity Target: 어떤 속도를 어떤 힘으로 줄지
