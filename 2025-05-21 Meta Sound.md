@@ -27,7 +27,7 @@
 - Trigger Repeat사용 Period는 BPM To Seconds를 연결해 사용
 - Trigger Sequence를 사용해 순차적으로 실행되게 사용
 
-## Trigger2
+### Trigger2
 - 주로 사용되는 함수들 정리
 
 ### BP_MSS_Wind
