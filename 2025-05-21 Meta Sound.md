@@ -72,3 +72,5 @@
 
 
 ### BP_TwoDoor
+- PhysicsConstraint Disable Collision체크
+- 
