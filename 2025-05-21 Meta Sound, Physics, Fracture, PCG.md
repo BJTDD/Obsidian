@@ -154,7 +154,9 @@
 - 누르고 메뉴창 Actor에서 Static Mesh로 바꿀수있음.
 
 ### PCG_Wall
-- 블루프린트에 PCG, SplinMode는 Distance
+- 블루프린트에 PCG, Spline 컴포넌트 추가, PCG에 PCG_Wall 넣어줌
+- 벽을 3층 쌓고 그 위에 나무, 버섯, 통나무, 덤불 올려줌
+- Simple Sampler의 모드를 Distance로 하여 거리를 지정
 - Transform Points로 크기와 위치 오프셋 지정가능 
 
 ### BP_PCG_Gate
