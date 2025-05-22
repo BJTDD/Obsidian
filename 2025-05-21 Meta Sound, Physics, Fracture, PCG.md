@@ -149,6 +149,7 @@
 - Transform Points로 크기 지정가능
 - Static Mesh Spawner - Mesh Entries 추가해서 Descripor에서 메시 지정 가능
 - 콜리전설정해서 통과 안되게
+- 누르고 메뉴창 Actor에서 Static Mesh로 바꿀수있음.
 
 ### PCG_Wall
 - Mode는 Distance
@@ -162,5 +163,5 @@
 
 ### BP_PCG_Road
 - 숲에 길 만들기
-- 스플라인 데이터 가져와서 Must Overlap Self 체크. 액터는 만들어둔 블루프린트에 스플라이만 있음
+- 스플라인 데이터 가져와서 Must Overlap Self 체크. 액터는 만들어둔 블루프린트에 스플라인만 있음
 - 
