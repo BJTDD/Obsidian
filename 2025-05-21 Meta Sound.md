@@ -99,3 +99,6 @@
 
 ### BP_SpringBoard
 - 다이빙
+
+### BP_Propeller
+- 블루프린트로 옵션설정
