@@ -162,6 +162,7 @@
 ### BP_PCG_Gate
 - 곂친곳 다른 메시로 바꿔줌
 - 콜리전 박스 추가해서 루트로 만들고 Tags에 Gate이름 추가
+- PCG_Wall의 1층벽과 곂친곳을 다른 벽으로 교체함
 
 ### PCG_Biome
 - 블루프린트 Spline 만들어 Closed Loop 체크.
