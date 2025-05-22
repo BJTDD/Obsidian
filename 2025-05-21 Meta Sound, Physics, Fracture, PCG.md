@@ -153,6 +153,7 @@
 
 ### PCG_Wall
 - Mode는 Distance
+- Transform Points로 크기와 위치 오프셋 지정가능 
 
 ### BP_PCG_Gate
 - 곂친곳 다른 메시로 바꿔줌
