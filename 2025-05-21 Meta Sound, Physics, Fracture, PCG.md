@@ -110,8 +110,9 @@
 - 레벨 블루프린트로 트리거박스에 내가 오버랩되면 Activate 체크 되게 만듬
 
 ### Balloon
-- PhysicsThruster  힘은 중력가속도 만큼
+- PhysicsThruster  힘은 중력가속도 만큼, 풍선 무게는 0.01
 - 블루프린트 사용하면 Auto Activate 를 체크 해제해서 사용
+- 여기선 벽 밀고 가야해서 
 
 ### Physics Asset 
 - 물리적효과 어떻게줄지
