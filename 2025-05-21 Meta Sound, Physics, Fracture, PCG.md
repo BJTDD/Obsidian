@@ -124,7 +124,7 @@
 
 ##  Fracture
 - 건물 파편 적용 (좀 무거움) 
-- 적용할 메시누르고 Fracture Mode에서 New로 만들어 Geometry Collection을 만듬
+- 적용할 메시누르고 Fracture Mode에서 New로 만들어 원하는 경로에 Geometry Collection을 만듬
 - Damage 임계값을 수정하여 힘 받는 양을 조절
 
 ### Uniform
