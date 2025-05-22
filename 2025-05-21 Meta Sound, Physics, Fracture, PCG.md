@@ -143,10 +143,10 @@
 ## PCG
 - 런타임때 맵 수정 가능
 - 플러그인 Procedural Content Generation Framework PCG 다운
-- 블루프린트만들어 PCG컴포넌트 추가하고  Instance - Graph 에 PCG Graph 넣어줌
-- 스플라인만들어 우클릭 Spline Generate Panel 로 사각형 만듬 Closed Loop 체크
 
 ### PCG_Floor 
+- 블루프린트만들어 PCG컴포넌트 추가하고  Instance - Graph 에 PCG Graph 넣어줌
+- 스플라인만들어 우클릭 Spline Generate Panel 로 사각형 만듬 Closed Loop 체크
 - Spline Sample에서 On Interior로 변경(포인트를 만들어줌), Unbounded체크, 디버그 모드 체크
 - Transform Points로 크기 지정가능
 - Static Mesh Spawner - Mesh Entries 추가해서 Descripor에서 메시 지정 가능
