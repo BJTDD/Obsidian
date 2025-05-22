@@ -152,3 +152,5 @@
 
 ### PCG_Wall
 - Mode는 Distance
+
+### PCG_Biome
