@@ -154,7 +154,7 @@
 - 누르고 메뉴창 Actor에서 Static Mesh로 바꿀수있음.
 
 ### PCG_Wall
-- Mode는 Distance
+- 블루프린트에 PCG, SplinMode는 Distance
 - Transform Points로 크기와 위치 오프셋 지정가능 
 
 ### BP_PCG_Gate
