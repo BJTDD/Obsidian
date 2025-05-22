@@ -157,4 +157,4 @@
 - 곂친곳 다른 메시로 바꿔줌
 
 ### PCG_Biome
-- Spline 만들어 Closed Loop 체크
+- 블루프린트 Spline 만들어 Closed Loop 체크
