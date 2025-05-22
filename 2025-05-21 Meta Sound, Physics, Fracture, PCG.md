@@ -123,7 +123,7 @@
 - Friction 마찰력
 
 ##  Fracture
-- 건물 파편 적용 좀 무거움 
+- 건물 파편 적용 (좀 무거움) 
 - 적용할 메시누르고 Fracture Mode에서 New로 만들어 Geometry Collection을 만듬
 - Damage 임계값을 수정하여 힘 받는 양을 조절
 
