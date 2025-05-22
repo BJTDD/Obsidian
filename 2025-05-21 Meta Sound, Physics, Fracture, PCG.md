@@ -157,4 +157,9 @@
 - 곂친곳 다른 메시로 바꿔줌
 
 ### PCG_Biome
-- 블루프린트 Spline 만들어 Closed Loop 체크
+- 블루프린트 Spline 만들어 Closed Loop 체크.
+- 숲 만들기
+
+### BP_PCG_Road
+- 숲에 길 만들기
+- Must Overlap Self 체크
