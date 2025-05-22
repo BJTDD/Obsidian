@@ -153,4 +153,8 @@
 ### PCG_Wall
 - Mode는 Distance
 
+### BP_PCG_Gate
+- 곂친곳 다른 메시로 바꿔줌
+
 ### PCG_Biome
+- Spline 만들어 Closed Loop 체크
