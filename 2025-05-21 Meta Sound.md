@@ -120,3 +120,6 @@
 - Restitution(복원력)값 수정 - 탄성계수 
 - Friction 마찰력
 
+
+##  Fracture
+- 건물 파편 적용 
