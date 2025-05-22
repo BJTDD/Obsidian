@@ -105,4 +105,5 @@
 - 자동으로 돌아가게 하고 싶은데 Twist and Swing이 한번 건드려줘야 움직여서 뭔가 잘 안됨
 
 ### RadialForceActor
-- 주변에 물리적 힘을줌
+- 해당 타입의 주변에 물리적 힘을줌
+- Auto Activate꺼주고 트리거박스에 오버랩되면 Activate할거임
