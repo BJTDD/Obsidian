@@ -106,7 +106,8 @@
 
 ### RadialForceActor
 - 해당 타입의 주변에 물리적 힘을줌
-- Auto Activate꺼주고 트리거박스에 오버랩되면 Activate할거임
+- 레벨에 RadialForceActor 배치하고 주변에 큐브를 쌓아둠. Force Strength은 100만, Auto Activate 끄기
+- 레벨 블루프린트로 트리거박스에 내가 오버랩되면 Activate 체크 되게 만듬
 
 ### Balloon
 - PhysicsThruster  힘은 중력가속도 만큼
