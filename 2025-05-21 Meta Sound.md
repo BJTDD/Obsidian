@@ -107,3 +107,6 @@
 ### RadialForceActor
 - 해당 타입의 주변에 물리적 힘을줌
 - Auto Activate꺼주고 트리거박스에 오버랩되면 Activate할거임
+
+### Balloon
+- PhysicsThruster  힘은 중력가속도 만큼
