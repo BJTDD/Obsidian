@@ -123,3 +123,4 @@
 
 ##  Fracture
 - 건물 파편 적용 
+- 적용할 메시누르고 Fracture Mode에서 New로 만들어 Geometry Collection을 만듬
