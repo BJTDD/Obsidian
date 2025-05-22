@@ -120,7 +120,6 @@
 - Restitution(복원력)값 수정 - 탄성계수 
 - Friction 마찰력
 
-
 ##  Fracture
 - 건물 파편 적용 좀 무거움 
 - 적용할 메시누르고 Fracture Mode에서 New로 만들어 Geometry Collection을 만듬
@@ -139,6 +138,6 @@
 ### ChaosCacheCollection
 - 좀 가볍게 사용하는 방법이 있는듯
 
-
 ## PCG
-- 
+- 런타임때 맵 수정 가능
+- 플러그인 Procedural Content Generation Framework PCG 다운
