@@ -146,3 +146,4 @@
 - PCG_Floor 만듬 Spline Sample에서 On Interior로 변경, Unbounded체크, 디버그 모드 체크
 - Transform Points로 크기 지정가능
 - Static Mesh Spawner - Mesh Entries 추가해서 Descripor에서 메시 지정 가능
+- 콜리전설정
