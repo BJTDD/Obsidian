@@ -143,5 +143,5 @@
 - 플러그인 Procedural Content Generation Framework PCG 다운
 - 블루프린트만들어 PCG컴포넌트 추가하고  Instance - Graph 에 PCG Graph 넣어줌
 - 스플라인만들어 우클릭 Spline Generate Panel 로 사각형 만듬 Closed Loop 체크
-- PCG_Floor 만들어 Spline Sample만들어 On Interior, Unbounded체크
+- PCG_Floor 만듬 Spline Sample만들어 On Interior로 변경, Unbounded체크, 디버그 모드 체크
 - 
