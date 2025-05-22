@@ -156,8 +156,10 @@
 ### PCG_Wall
 - 블루프린트에 PCG, Spline 컴포넌트 추가, PCG에 PCG_Wall 넣어줌
 - 벽을 3층 쌓고 그 위에 나무, 버섯, 통나무, 덤불 올려줌
-- Simple Sampler의 모드를 Distance로 하여 거리를 지정
-- Transform Points로 크기와 위치 오프셋 지정가능 
+- Simple Sampler의 모드를 Distance로 하여 Distance Increment값을 조절하여 거리를 지정
+- Transform Points로 크기와 위치 오프셋 지정가능  
+- Offset Min,Max로 위치(X축:거리, Z축:높이)지정 가능 다르게하면 랜덤으로 사이값
+- Rotation Min,Max   Scale Min,Max 도 마찬가지
 
 ### BP_PCG_Gate
 - 곂친곳 다른 메시로 바꿔줌
