@@ -110,3 +110,4 @@
 
 ### Balloon
 - PhysicsThruster  힘은 중력가속도 만큼
+- 블루프린트 사용하면 Auto Activate 를 체크 해제해서 사용
