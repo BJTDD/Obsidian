@@ -199,3 +199,4 @@
 - 플러그인 다운
 - WaterBodyLake액터 레벨에 배치
 - 물에 곂친 메시들 지우기
+- 옵션에서  Terrain, Wave 설정 가능
