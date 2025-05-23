@@ -207,7 +207,7 @@
 
 ### BP_PCG_Spawner
 - 플러그인 Procedural Content Generation Frameworkd PCG Geometry Script Interop 다운
-- 메시위에 메시생성 할거임
+- 메시위에 메시생성 할거임. 블루프린트의 변수를 가져와 PCG에서 사용가능
 - Attribute Noise: Density 값을 해당 범위 랜덤으로 줌 
 - Density Filter: Density 해당값 사이만 패스
 - Normal To Density: Z축이 1. 해당 메시가 위로 보고있는것만 사용할거임 다시 필터사용
