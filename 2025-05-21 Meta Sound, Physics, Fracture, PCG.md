@@ -182,5 +182,11 @@
 - 피봇이 중앙정렬이 아니라면 Z로테이션을 180도 돌려 사용
 - 스태틱매시 피봇 바꾸려면 해당 스태틱매시 눌러서 모델링모드로 가서 XForm눌러 센터, 바텀 눌러 지정
 
+## Landscape
+
 ### Lv_PCG_Landscape
 - 랜드스케이프모드 - 페인트 - 타겟레이어에서 각 레이어마다 우클릭 Fill레이어
+
+### PCG_Volume
+- PCGComponent - Settings 안쪽에 PCG Graph 넣을수있음
+- 
