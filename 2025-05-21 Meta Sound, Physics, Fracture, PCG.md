@@ -207,5 +207,6 @@
 
 ### BP_PCG_Spawner
 - 플러그인 Procedural Content Generation Frameworkd PCG Geometry Script Interop 다운
-- 매시에 생성
+- 블루프린트 메시위에 메시생성
+- 
 - 
