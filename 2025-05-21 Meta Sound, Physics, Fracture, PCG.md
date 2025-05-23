@@ -206,4 +206,6 @@
 - 강 만들어 강 주위와 안쪽에 돌 배치
 
 ### BP_PCG_Spawner
-- 
+- 플러그인 Procedural Content Generation Frameworkd PCG Geometry Script Interop 다운
+- 매시에 생성
+- Get Actor Property
