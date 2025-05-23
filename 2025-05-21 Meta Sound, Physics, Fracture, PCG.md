@@ -197,7 +197,7 @@
 - 타겟레이어에 사용할 레이어이름 넣고 툴강도의 오퍼레이터와 비교해서 생성
 
 ### WaterBodyLake
-- 플러그인 다운
+- Water 플러그인 다운
 - WaterBodyLake액터 레벨에 배치
 - 물에 곂친 메시들 지우기
 - 옵션에서  Terrain, Wave 설정 가능
@@ -213,3 +213,6 @@
 - Normal To Density: Z축이 1. 해당 메시가 위로 보고있는것만 사용할거임 다시 필터사용
 - 블루프린트 Construction Script에서 나의 Static Mesh 컴포넌트를 My Mesh변수로 Set 시킬꺼임 
 - My Mesh는 PCG Graph에서 변경시키고있음. 마찬가지로 다른 변수들도 가져와서 사용
+
+### PCG_Grid
+- 
