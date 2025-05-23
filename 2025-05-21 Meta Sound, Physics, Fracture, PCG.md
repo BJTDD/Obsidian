@@ -149,6 +149,9 @@
 - 캐시모드를 Play로 하고 Start Time을 움직여서 잘되는지 확인
 - CCC_Brick_2을 레벨에 배치해 단독으로 사용가능
 
+### Level Sequence
+- CCC를 레벨 시퀀스에 넣어 Start Time 을 조절해 시퀀스를 만들 수 있음
+
 ## PCG
 - 런타임때 맵 수정 가능
 - 플러그인 Procedural Content Generation Framework PCG 다운
