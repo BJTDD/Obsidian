@@ -139,7 +139,6 @@
 
 ### ChaosCacheCollection
 - 좀 가볍게 사용하는 방법이 있는듯
-- 브릭을 작게 쪼갬
 - 엔진- 콘텐츠  /All/EngineData/Engine/EditorResources/FieldNodes
 - FS_MasterField 로 충격을주고 Directional Magnitude 높이면 힘이 강해짐 Use Directional Vector 체크하면 해당방향으로 힘을줌
 - FS_AnchorField_Generic 이것과 곂친부분은 충격 안받음
