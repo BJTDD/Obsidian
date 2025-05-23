@@ -202,11 +202,10 @@
 - 해당 레이어를 눌러 페인트 칠 할 수 있음
 
 ### PCG_Volume
-- PCGComponent - Settings 안쪽에 PCG Graph 넣을수있음
+- PCGVolume액터 레벨에 배치하여 PCGComponent - Settings 안쪽에 PCG Graph 넣을수있음
 - 볼륨에 곂친공간에 원하는 메시를 넣을거임
 - Surface Sampler사용 - 간격과 양 조절
-- Attribute Filter Use Constant Threshold 체크.  
-- 타겟레이어에 사용할 레이어이름 넣고 툴강도의 오퍼레이터와 비교해서 생성
+- Attribute Filter Use Constant Threshold 체크. 타겟레이어에 사용할 레이어이름 넣고 툴강도의 오퍼레이터와 비교해서 생성
 
 ### WaterBodyLake
 - Water 플러그인 다운
