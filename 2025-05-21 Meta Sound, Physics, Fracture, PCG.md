@@ -215,4 +215,6 @@
 - My Mesh는 PCG Graph에서 변경시키고있음. 마찬가지로 다른 변수들도 가져와서 사용
 
 ### PCG_Grid
-- 
+- Get Actor Data 모드를 Get Single Point로 해서 하나만 가져오게 
+- Bounds Modifier는 보기편하게하려고
+- Copy Points 가지고있는 그리드를 복사해서 타겟에 넘겨줌 
