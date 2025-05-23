@@ -143,6 +143,7 @@
 - FS_MasterField 로 충격을주고 Directional Magnitude 높이면 힘이 강해짐
 - FS_AnchorField_Generic 이것과 곂친부분은 충격 안받음
 - 사용하는벽 GC_Brick_2 의 Initialization Fields에  FS_AnchorField_Generic 이것들 다 추가해주기 
+- 그대로 사용하면 무거우니 브릭을 카오스캐시매니저 생성(CCC_Brick_2)
 
 ### ChaosCacheCollection
 - 좀 가볍게 사용하는 방법이 있는듯
