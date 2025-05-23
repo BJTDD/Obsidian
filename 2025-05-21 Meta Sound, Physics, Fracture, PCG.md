@@ -186,7 +186,11 @@
 
 ### Lv_PCG_Landscape
 - 랜드스케이프모드 - 페인트 - 타겟레이어에서 각 레이어마다 우클릭 Fill레이어
+- 해당 레이어를 눌러 페인트 칠 할 수 있음
 
 ### PCG_Volume
 - PCGComponent - Settings 안쪽에 PCG Graph 넣을수있음
 - Surface Sampler사용 - 볼륨에 곂친공간에 랜드스케이프 넣어줌
+
+### Water
+- 플러그인 다운
