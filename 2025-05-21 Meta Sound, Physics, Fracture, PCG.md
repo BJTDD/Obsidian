@@ -176,3 +176,7 @@
 - 숲에 길 만들기
 - 스플라인 데이터 가져와서 Must Overlap Self 체크. 액터는 만들어둔 블루프린트에 스플라인만 있음
 
+### BP_PCG_Building
+- 블루프린트에 콜리전 박스 추가 사용할 메시보다 크기 크게
+- 이번엔 박스콜리전을 사용했으니 PCG에서 Volume Sampler사용 Voxel Size는 박스콜리전 사이즈로
+- 
