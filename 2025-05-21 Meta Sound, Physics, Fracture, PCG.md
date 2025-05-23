@@ -137,7 +137,8 @@
 - 중심점에서 쪼개짐
 - 노이즈 주면 경계부분에서 자연스럽게
 
-### Uniform
+### ChaosCacheCollection
+- 좀 가볍게 사용하는 방법이 있는듯
 - 브릭을 작게 쪼갬
 - 엔진- 콘텐츠  /All/EngineData/Engine/EditorResources/FieldNodes
 - FS_MasterField 로 충격을주고 Directional Magnitude 높이면 힘이 강해짐 Use Directional Vector 체크하면 해당방향으로 힘을줌
@@ -147,9 +148,6 @@
 - 카오스캐시매니저 캐시모드를 RECORD모드로해서 시뮬레이션 실행 파편들이 다멈추면 종료
 - 캐시모드를 Play로 하고 Start Time을 움직여서 잘되는지 확인
 - CCC_Brick_2을 레벨에 배치해 단독으로 사용가능
-
-### ChaosCacheCollection
-- 좀 가볍게 사용하는 방법이 있는듯
 
 ## PCG
 - 런타임때 맵 수정 가능
