@@ -139,9 +139,10 @@
 
 ### ChaosCacheCollection
 - 좀 가볍게 사용하는 방법이 있는듯
-- 엔진- 콘텐츠  /All/EngineData/Engine/EditorResources/FieldNodes
-- FS_MasterField 로 충격을주고 Directional Magnitude 높이면 힘이 강해짐 Use Directional Vector 체크하면 해당방향으로 힘을줌
-- FS_AnchorField_Generic 이것과 곂친부분은 충격 안받음
+- 엔진 - 콘텐츠 - EditorResources - FieldNodes 의  FS_AnchorField_Generic, FS_MasterField 사용
+- FS_MasterField: 충격을 줌. Directional Magnitude 높이면 힘이 강해짐 Use Directional Vector 체크하면 해당 방향으로 힘을 줌
+- FS_AnchorField_Generic: 이것과 곂친 부분은 충격 안 받음
+- 큐브로 벽을만들어 Fracture적용
 - 사용하는벽 GC_Brick_2 의 Initialization Fields에  FS_AnchorField_Generic 이것들 다 추가해주기 
 - 그대로 사용하면 무거우니 브릭을 카오스캐시매니저 생성(CCC_Brick_2)후 카오스캐시매니저위치를 브릭으로 이동
 - 카오스캐시매니저 캐시모드를 RECORD모드로해서 시뮬레이션 실행 파편들이 다멈추면 종료
