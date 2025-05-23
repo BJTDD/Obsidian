@@ -122,7 +122,7 @@
 - Restitution(복원력)값 수정 - 탄성계수 
 - Friction 마찰력
 
-##  Fracture
+## Fracture
 - 건물 파편 적용 (좀 무거움) 
 - 적용할 메시누르고 Fracture Mode에서 New로 만들어 원하는 경로에 Geometry Collection을 만듬
 - Damage 임계값을 수정하여 힘 받는 양을 조절
@@ -223,4 +223,6 @@
 ## Lv_Dungeon
 
 ### PCG_Path
-- 길
+- 런타임에 계속 바뀜
+- 0번 인덱스에서 마지막 인덱스로 
+- 
