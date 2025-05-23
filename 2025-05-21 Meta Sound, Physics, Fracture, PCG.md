@@ -227,7 +227,7 @@
 
 ### PCG_Grid
 - Get Actor Data 모드를 Get Single Point로 해서 하나만 가져오게 
-- Bounds Modifier는 보기편하게하려고
+- Bounds Modifier는 보기 편하게 하려고 사용
 - Copy Points 가지고있는 그리드를 복사해서 타겟에 넘겨줌 
 - 그리드를 활용해 PCG Graph 만듬
 
