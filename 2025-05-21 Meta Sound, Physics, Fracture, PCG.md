@@ -203,4 +203,4 @@
 - 옵션에서  Terrain, Wave 설정 가능
 
 ### WaterBodyRiver
-- 
+- 강 만들어 강 주위와 안쪽에 돌 배치
