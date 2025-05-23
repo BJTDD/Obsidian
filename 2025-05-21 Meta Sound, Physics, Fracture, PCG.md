@@ -195,8 +195,11 @@
 - Attribute Filter Use Constant Threshold 체크.  
 - 타겟레이어에 사용할 레이어이름 넣고 툴강도의 오퍼레이터와 비교해서 생성
 
-### Water
+### WaterBodyLake
 - 플러그인 다운
 - WaterBodyLake액터 레벨에 배치
 - 물에 곂친 메시들 지우기
 - 옵션에서  Terrain, Wave 설정 가능
+
+### WaterBodyRiver
+- 
