@@ -50,17 +50,17 @@
             }
           },
           {
-            "id": "a53fbf46306f368c",
+            "id": "d447bfa11a9c06cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
+                "file": "2025-05-26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-21 Meta Sound, Physics, Fracture, PCG"
+              "title": "2025-05-26"
             }
           }
         ],
@@ -224,14 +224,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a53fbf46306f368c",
+  "active": "d447bfa11a9c06cd",
   "lastOpenFiles": [
+    "2025-05-26.md",
+    "2025-05-19 EQS.md",
     "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
     "할것.md",
     "2025-05-16 EQS.md",
     "기획.md",
     "2025-05-12 CPP AI Damage.md",
-    "2025-05-19 EQS.md",
     "1.jpg",
     "2025-05-08.md",
     "2025-05-09.md",
