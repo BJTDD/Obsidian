@@ -63,7 +63,8 @@
               "title": "2025-05-26 레벨 디자인"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -223,14 +224,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ae24025fab0886d6",
+  "active": "d447bfa11a9c06cd",
   "lastOpenFiles": [
+    "기획.md",
     "2025-05-26 레벨 디자인.md",
     "2025-05-19 EQS.md",
     "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
     "할것.md",
     "2025-05-16 EQS.md",
-    "기획.md",
     "2025-05-12 CPP AI Damage.md",
     "1.jpg",
     "2025-05-08.md",
