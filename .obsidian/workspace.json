@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -238,10 +238,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f28f6eff0cc0659f",
+  "active": "d447bfa11a9c06cd",
   "lastOpenFiles": [
-    "2025-05-26 레벨 디자인.md",
     "2025-05-28.md",
+    "2025-05-26 레벨 디자인.md",
     "기획.md",
     "2025-05-19 EQS.md",
     "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
