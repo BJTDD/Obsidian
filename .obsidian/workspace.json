@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "509eb19905a50656",
@@ -223,7 +224,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3c287849869d0a01",
+  "active": "d447bfa11a9c06cd",
   "lastOpenFiles": [
     "2025-05-28.md",
     "2025-05-26 레벨 디자인 위젯 콜리전.md",
