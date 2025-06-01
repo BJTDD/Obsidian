@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ae24025fab0886d6",
+            "id": "2ec5e7425bc399bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,21 @@
             }
           },
           {
-            "id": "6bdcf7570a9d80e4",
+            "id": "8c97d4203b7eecfc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-04-25.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-04-25"
+            }
+          },
+          {
+            "id": "ae24025fab0886d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,37 +48,9 @@
               "icon": "lucide-file",
               "title": "할것"
             }
-          },
-          {
-            "id": "47e6b045beb0f636",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-05-19 EQS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-19 EQS"
-            }
-          },
-          {
-            "id": "d447bfa11a9c06cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-05-26 레벨 디자인 위젯 콜리전.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-26 레벨 디자인 위젯 콜리전"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -121,44 +107,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "509eb19905a50656",
     "type": "split",
     "children": [
       {
-        "id": "06e6c428187ebc2f",
+        "id": "dd2c98e4f74afadc",
         "type": "tabs",
         "children": [
           {
-            "id": "b6a8eabff7e44a75",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "2025-04-29.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "2025-04-29 의 개요"
-            }
-          },
-          {
-            "id": "3c287849869d0a01",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "570c04530caa301f",
+            "id": "a3f20bfd9dd0726f",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -177,7 +137,7 @@
             }
           },
           {
-            "id": "37b6e9665fb07773",
+            "id": "f9240d9d02355819",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -191,7 +151,7 @@
             }
           },
           {
-            "id": "8aaea39838444871",
+            "id": "5c032aad5d9042bb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -204,13 +164,38 @@
               "icon": "lucide-tags",
               "title": "태그"
             }
+          },
+          {
+            "id": "66766a07d031ec75",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "기획.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "기획 의 개요"
+            }
+          },
+          {
+            "id": "8e7d96f92b59aa40",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,37 +209,32 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d447bfa11a9c06cd",
+  "active": "ae24025fab0886d6",
   "lastOpenFiles": [
-    "2025-05-28.md",
-    "2025-05-26 레벨 디자인 위젯 콜리전.md",
+    "2025-04-28.md",
     "기획.md",
-    "2025-05-19 EQS.md",
-    "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
     "할것.md",
+    "스토리.md",
+    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
+    "2025-05-26 레벨 디자인 위젯 콜리전.md",
+    "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
+    "2025-05-19 EQS.md",
     "2025-05-16 EQS.md",
     "2025-05-12 CPP AI Damage.md",
-    "1.jpg",
-    "2025-05-08.md",
     "2025-05-09.md",
-    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
-    "스토리.md",
-    "Excalidraw/Drawing 2025-05-08 12.28.38.excalidraw.md",
-    "APlayerCharacterControll.md",
-    "무제.canvas",
-    "무제",
+    "2025-05-08.md",
     "2025-05-07.md",
     "2025-04-30.md",
     "2025-04-29.md",
-    "2025-04-28.md",
-    "conflict-files-obsidian-git.md",
+    "1.jpg",
+    "Excalidraw/Drawing 2025-04-28 18.10.45.excalidraw.md",
     "2025-04-25.md",
     "Excalidraw/Drawing 2025-04-28 18.11.02.excalidraw.md",
-    "Excalidraw/Drawing 2025-04-28 18.11.14.excalidraw.md",
-    "Excalidraw/Drawing 2025-04-28 18.10.45.excalidraw.md",
     "Excalidraw",
+    "무제.md",
     "2025-04-24.md",
     "2025-04-23.md",
+    "무제.canvas",
     "환영합니다!.md"
   ]
 }
