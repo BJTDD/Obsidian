@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기획.md",
+                "file": "2025-06-09 스팀 멀티.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기획"
+              "title": "2025-06-09 스팀 멀티"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "509eb19905a50656",
@@ -183,13 +182,13 @@
   },
   "active": "2ec5e7425bc399bc",
   "lastOpenFiles": [
-    "2025-05-08.md",
-    "기획.md",
-    "2025-06-09 스팀 멀티.md",
     "2025-06-11.md",
-    "2025-04-25.md",
+    "기획.md",
     "스토리.md",
     "할것.md",
+    "2025-05-08.md",
+    "2025-06-09 스팀 멀티.md",
+    "2025-04-25.md",
     "2025-06-02.md",
     "2025-04-28.md",
     "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
