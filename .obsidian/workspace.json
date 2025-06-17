@@ -34,20 +34,6 @@
               "icon": "lucide-file",
               "title": "기획"
             }
-          },
-          {
-            "id": "622b6c7c861cd092",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
         ],
         "currentTab": 1
@@ -107,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "509eb19905a50656",
@@ -209,7 +196,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "5aa755de25c1962d",
+  "active": "8e7d96f92b59aa40",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "기획.md",
