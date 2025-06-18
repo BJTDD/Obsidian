@@ -34,7 +34,14 @@
               "icon": "lucide-file",
               "title": "기획"
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "c7fcfe0fbbcb6e6b",
+        "type": "tabs",
+        "children": [
           {
             "id": "c702e749af780339",
             "type": "leaf",
@@ -49,8 +56,7 @@
               "title": "스토리"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,13 +215,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "353bdb77c908cb48",
+  "active": "c702e749af780339",
   "lastOpenFiles": [
-    "~$25-04-24.md",
     "기획.md",
+    "스토리.md",
+    "~$25-04-24.md",
     "2025-06-02 패스워드 문, 인벤토리.md",
     "2025-06-09 스팀 멀티 플러그인 최적화.md",
-    "스토리.md",
     "2025-05-26 레벨 디자인 위젯 콜리전.md",
     "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
     "2025-05-19 EQS.md",
