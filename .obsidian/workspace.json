@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +209,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d1c2f55ac7d75ff8",
+  "active": "5aa755de25c1962d",
   "lastOpenFiles": [
     "스토리.md",
     "conflict-files-obsidian-git.md",
