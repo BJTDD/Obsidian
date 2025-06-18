@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "기획"
             }
+          },
+          {
+            "id": "c702e749af780339",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-06-02 패스워드 문, 인벤토리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-02 패스워드 문, 인벤토리"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "509eb19905a50656",
@@ -196,26 +209,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8e7d96f92b59aa40",
+  "active": "c702e749af780339",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "기획.md",
-    "2025-06-09 스팀 멀티.md",
-    "2025-06-11.md",
+    "2025-06-09 스팀 멀티 플러그인 최적화.md",
+    "2025-06-02 패스워드 문, 인벤토리.md",
     "스토리.md",
-    "할것.md",
-    "2025-05-08.md",
-    "2025-04-25.md",
-    "2025-06-02.md",
-    "2025-04-28.md",
-    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
+    "기획.md",
     "2025-05-26 레벨 디자인 위젯 콜리전.md",
     "2025-05-21 Meta Sound, Physics, Fracture, PCG.md",
     "2025-05-19 EQS.md",
     "2025-05-16 EQS.md",
     "2025-05-12 CPP AI Damage.md",
     "2025-05-09.md",
+    "2025-05-08.md",
     "2025-05-07.md",
+    "2025-04-23.md",
+    "2025-06-11.md",
+    "BioPhobia 기획서.md",
+    "할것.md",
+    "conflict-files-obsidian-git.md",
+    "2025-04-25.md",
+    "2025-04-28.md",
+    "Excalidraw/적AI구조 2025-05-08 12.31.04.excalidraw.md",
     "2025-04-30.md",
     "2025-04-29.md",
     "1.jpg",
@@ -224,8 +239,6 @@
     "Excalidraw",
     "무제.md",
     "2025-04-24.md",
-    "2025-04-23.md",
-    "무제.canvas",
-    "환영합니다!.md"
+    "무제.canvas"
   ]
 }
