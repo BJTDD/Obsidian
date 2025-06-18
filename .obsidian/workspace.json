@@ -6,7 +6,7 @@
       {
         "id": "7a220c1c80b6ae53",
         "type": "tabs",
-        "dimension": 64.18786692759295,
+        "dimension": 37.96477495107632,
         "children": [
           {
             "id": "2ec5e7425bc399bc",
@@ -42,7 +42,7 @@
       {
         "id": "c7fcfe0fbbcb6e6b",
         "type": "tabs",
-        "dimension": 35.81213307240704,
+        "dimension": 62.03522504892368,
         "children": [
           {
             "id": "c702e749af780339",
@@ -219,8 +219,9 @@
   },
   "active": "c702e749af780339",
   "lastOpenFiles": [
-    "스토리.md",
     "기획.md",
+    "BioPhobia 기획서.md",
+    "스토리.md",
     "2025-06-09 스팀 멀티 플러그인 최적화.md",
     "~$25-04-24.md",
     "2025-06-02 패스워드 문, 인벤토리.md",
@@ -234,7 +235,6 @@
     "2025-05-07.md",
     "2025-04-23.md",
     "2025-06-11.md",
-    "BioPhobia 기획서.md",
     "할것.md",
     "conflict-files-obsidian-git.md",
     "2025-04-25.md",
