@@ -6,7 +6,6 @@
       {
         "id": "7a220c1c80b6ae53",
         "type": "tabs",
-        "dimension": 37.96477495107632,
         "children": [
           {
             "id": "2ec5e7425bc399bc",
@@ -35,15 +34,7 @@
               "icon": "lucide-file",
               "title": "기획"
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "c7fcfe0fbbcb6e6b",
-        "type": "tabs",
-        "dimension": 62.03522504892368,
-        "children": [
+          },
           {
             "id": "c702e749af780339",
             "type": "leaf",
@@ -58,7 +49,8 @@
               "title": "BioPhobia 기획서"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
